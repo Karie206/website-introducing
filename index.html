@@ -1,70 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <!-- phần đầu -->
 <head>
+    <meta charset="UTF-8">
+    <title>Trang Web Đơn Giản</title>
 
- <title>
-  Đây là web giới thiệu về bản thân
- </title>
+    <link rel="stylesheet" href="index.css">
 
 </head>
+
+    <!-- phần thân -->
 <body>
-  
-   <img width="130" src="https://i.pinimg.com/736x/db/04/ef/db04ef10d7b9ca96ad242c840bbfc783.jpg" />
- <h4>Chào, tôi tên Thái Kiệt! đây là 1 website đơn giản for beginner. </h4>
-  <div>
-<p> 
-  Sở thích của tôi: </p>
-<ul> 
-  <li>Xem phim</li>
-  <li>Xem anime romance</li>
-  <li>Học hỏi một số thứ thú vị</li>
-<li> ... </li>
-</ul>
-  </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li> <a href="https://www.tiktok.com/@kariebel?is_from_webapp=1&sender_device=pc">TikTok</a> </li>
+                <li><a href="http://www.youtube.com/@karie2006">Youtube</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="https://www.facebook.com/kariemegame?mibextid=ZbWKwL">Facebook</a></li>
+                <li><a href="https://www.rophim.me/phimhay" >Trang ngoài</a></li>
+            </ul>
+        </nav>
+        <h1>Chào mừng đến với trang web của tôi!</h1>
+    </header>
+    
+   <main>
+        <section id="home">
+            <h2>Trang chủ</h2>
+            <p>Chào mừng bạn đến với trang web đơn giản của tôi!</p>
+            <button onclick="changeColor()">Thay đổi màu nền</button>
+        </section>
+        
+        <section id="about">
+            <h2>Giới thiệu</h2>
+            <p>Đây là một trang web đơn giản được tạo bằng index HTML và CSS</p>
+            <button onclick="alert('Bạn đã nhấp vào nút!')">Nhấn vào tôi đi</button>
+        </section>
+        
+        <section id="contact">
+            <h2>Liên hệ tôi</h2>
+            <p>Email: thaikiet519@email.com</p>
+            <button onclick="window.location.href='#home'">Quay lại Trang chủ</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Trang Web Đơn Giản Của Kiệt</p>
+    </footer>
 
-  <div>
-    <h3> Có muốn hỏi gì không? </h3>
-    <form>
-      <input type="text" placeholder="Điền câu hỏi..." />
-      <button>
-        Gửi
-      </button>
-    </form>
-  </div>
-
-<footer>
-  <h4> Thông tin liên lạc của tôi:</h4>
-<ul>
-  <li>Email: <a href="https://mail.google.com/mail/u/1/#inbox"> thaikiet519@gmail.com</a> </li>
-  <li>FaceBook: <a href="https://www.facebook.com/kariemegame?mibextid=ZbWKwL">thaikiet.06.20</a> </li>
-</ul>
-
-
-</footer>
-
-
-
-
-
+    <script>
+        function changeColor() {
+            document.body.style.backgroundColor = 
+                document.body.style.backgroundColor === 'pink' ? '#f4f4f4' : 'pink';
+        }
+    </script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
